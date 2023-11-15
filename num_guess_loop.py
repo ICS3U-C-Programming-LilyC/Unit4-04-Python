@@ -19,7 +19,7 @@ def main():
 
     # Initiating while loop.
     while True:
-        # Explaining my program the th user.
+        # Explaining my program to the user.
         print(
             "My program will generate a random number between 0 and 9. Try to guess the correct number!"
         )
@@ -36,19 +36,19 @@ def main():
             if user_number_as_int >= 0 and user_number_as_int <= 9:
                 counter = counter + 1
 
-                # Using and if statement to see if the user guessed correctly.
+                # Using an if statement to see if the user guessed correctly.
                 if user_number_as_int == random_number:
                     print(
                         "You guessed correctly! The number was {}.".format(
                             random_number
                         )
                     )
-                    # Using break statement to exist the loop.
+                    # Using a break statement to exit the loop.
                     break
 
                 # Else tell the user that their guess is wrong and display the amount of time the loop ran.
                 else:
-                    print("Your guessed wrong.Guess again!".format(random_number))
+                    print("Your guessed wrong.Guess again!")
                     print("Tracking {} times through the loop.".format(counter))
 
             # Else tell the user that their number is not within the range.
