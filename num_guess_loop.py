@@ -34,6 +34,7 @@ def main():
 
             # Using an if statement to check if the number guessed is in range of 0-9.
             if user_number_as_int >= 0 and user_number_as_int <= 9:
+                # Increment the counter.
                 counter = counter + 1
 
                 # Using an if statement to see if the user guessed correctly.
