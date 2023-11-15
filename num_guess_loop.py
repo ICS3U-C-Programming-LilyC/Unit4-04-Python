@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Created by: Lily Carroll
-# Created on: Nov/9/2023
+# Created on: Nov/15/2023
 # This program allows the user to guess a number between 0 and 9.
 # It uses a while TRUE loop to continue asking the user to guess the number, until they guess correctly.
 # It uses a break statement to end the loop.
@@ -17,13 +17,13 @@ def main():
     # Declaring a variable for the random number.
     random_number = random.randint(0, 9)
 
+    # Explaining my program to the user.
+    print(
+        "My program will generate a random number between 0 and 9. Try to guess the correct number!"
+    )
+
     # Initiating while loop.
     while True:
-        # Explaining my program to the user.
-        print(
-            "My program will generate a random number between 0 and 9. Try to guess the correct number!"
-        )
-
         # Getting user input.
         user_number_as_string = input("Please enter your guess: ")
 
@@ -48,7 +48,7 @@ def main():
 
                 # Else tell the user that their guess is wrong and display the amount of time the loop ran.
                 else:
-                    print("Your guessed wrong.Guess again!")
+                    print("You guessed wrong. Guess again!")
                     print("Tracking {} times through the loop.".format(counter))
 
             # Else tell the user that their number is not within the range.
